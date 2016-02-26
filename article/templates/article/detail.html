@@ -1,0 +1,12 @@
+{% extends 'article/base.html' %}
+
+{% block content %}
+  <div class="article-detail">
+    <h1>{{ object.title }}<small>{{object.pub_date}}</small></h1>
+    <pre>{{ object.content }}</pre> 
+
+  </div>
+    
+{% endblock %}
+
+    

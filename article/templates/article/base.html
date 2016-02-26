@@ -1,0 +1,139 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="keywords" content="面包君">
+    <meta name="description" content="面包君个人博客">
+    <meta name="autor" content="Valerie Wang|面包君">
+    
+
+    <title>Valerie Wang 个人博客</title>
+
+    <!-- Icons -->
+    
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'article/style.css' %}" >
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine:bold">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+
+    <!--CHINESE FONT-->
+    <script type="text/javascript">var _jf = _jf || [];_jf.push(['p','40441']);_jf.push(['_setFont','setofont','css','.setofont']);_jf.push(['_setFont','setofont','css','body']);_jf.push(['_setFont','setofont','alias','setofont']);_jf.push(['_setFont','setofont','weight',600]);_jf.push(['_setFont','sourcehansans-tc-extralight','css','.sourcehansans-tc-extralight']);_jf.push(['_setFont','sourcehansans-tc-extralight','alias','sourcehansans-tc']);_jf.push(['_setFont','sourcehansans-tc-extralight','weight',100]);(function(f,q,c,h,e,i,r,d){var k=f._jf;if(k.constructor===Object){return}var l,t=q.getElementsByTagName("html")[0],a=function(u){for(var v in k){if(k[v][0]==u){if(false===k[v][1].call(k)){break}}}},j=/\S+/g,o=/[\t\r\n\f]/g,b=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,g="".trim,s=g&&!g.call("\uFEFF\xA0")?function(u){return u==null?"":g.call(u)}:function(u){return u==null?"":(u+"").replace(b,"")},m=function(y){var w,z,v,u,x=typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):" ";if(z){u=0;while((v=w[u++])){if(z.indexOf(" "+v+" ")<0){z+=v+" "}}t[c]=s(z)}}},p=function(y){var w,z,v,u,x=arguments.length===0||typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):"";if(z){u=0;while((v=w[u++])){while(z.indexOf(" "+v+" ")>=0){z=z.replace(" "+v+" "," ")}}t[c]=y?s(z):""}}},n;k.push(["_eventActived",function(){p(h);m(e)}]);k.push(["_eventInactived",function(){p(h);m(i)}]);k.addScript=n=function(u,A,w,C,E,B){E=E||function(){};B=B||function(){};var x=q.createElement("script"),z=q.getElementsByTagName("script")[0],v,y=false,D=function(){x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;a("_eventInactived");B()};if(C){v=setTimeout(function(){D()},C)}x.type=A||"text/javascript";x.async=w;x.onload=x.onreadystatechange=function(G,F){if(!y&&(!x.readyState||/loaded|complete/.test(x.readyState))){y=true;if(C){clearTimeout(v)}x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;if(!F){setTimeout(function(){E()},200)}}};x.onerror=function(H,G,F){if(C){clearTimeout(v)}D();return true};x.src=u;z.parentNode.insertBefore(x,z)};a("_eventPreload");m(h);n(r,"text/javascript",false,3000)})(this,this.document,"className","jf-loading","jf-active","jf-inactive","//ds.justfont.com/js/stable/v/4.9.6/id/176295531675");</script>
+
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse", data-target="#bs-example-navbar-collapse-1">
+            <span class="="sr-only>Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span calss="icon-bar"></span>
+            <span calss="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Valerie <span class="header-chinese">步履不停</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+              <a href="/">HOME</a>
+          </li>
+
+          <li>
+              <a href="/about">ABOUT</a>
+          </li>
+
+          <li>
+              <a href="/article">ARTICLE</a>
+          </li>
+
+        </ul>
+        
+          
+      </div>
+      <!--navibar-collapse-end -->
+    </div>
+    <!--container-end -->
+  </nav>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+     <div class="container">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="site-heading">
+            <h1 class="head" >Valerie 步履不停</h1>
+            <hr class="decoration">
+            <hr class="decoration">
+            <p class="subheading">Ms.Bread</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+    
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        {% block content %}
+        {% endblock %}
+
+        
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+           <li>
+            <a target-"_blank" href="https://github.com/loveohno13">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+           </li>
+            <li>
+            <a target="_blank" href="http://www.douban.com/people/QJING">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-1x fa-inverse">豆</i>
+              </span>
+            </a>
+          </li>
+              
+          <li>
+            <a target="_blank" href="https://www.zhihu.com/people/loveohno13">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa  fa-stack-1x fa-inverse">知</i>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright text-muted" style="text-align: center;">
+        &copy; 2016  Valerie|Ms.Bread ❖ Powered by Django.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+</html>

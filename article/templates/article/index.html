@@ -1,0 +1,25 @@
+{% extends 'article/base.html' %}
+
+{% block content %}
+  <div class="post-preview">
+    {% if article_list %}
+      <ul type=none>
+        {% for post in article_list %}
+        <li>
+          <a href="{% url 'article:detail' post.pk %}">
+          <h1 class="preview-h1">{{ post.title }}</h1>
+          <hr>
+          <pre class="preview-content"> {{ post.content }}...</pre>
+          <p class="preview-pubdate"> Posted on {{ post.pub_date }}</p>
+          <hr>
+          </a>
+        </li>
+        {% endfor %}
+    {% else %}
+        <p>No Article published.</p>
+    {% endif %}
+    </ul>
+  </div>
+{% endblock %}
+          
+
